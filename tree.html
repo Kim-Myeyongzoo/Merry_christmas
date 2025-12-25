@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Tree Customizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tree-container">
+        <div class="a3d" id="treeRoot">
+            <div class="star-cluster"></div>
+        </div>
+    </div>
+
+    <div class="control-panel">
+        <h3>Tree Settings</h3>
+        <div class="control-group">
+            <label>Star color</label>
+            <input type="color" id="starColor" value="#ffffff">
+        </div>
+         <div class="control-group">
+            <label>Neon Color</label>
+            <input type="color" id="shineColor" value="#000014">
+        </div>
+        <div class="control-group">
+            <label>Background Color</label>
+            <input type="color" id="bgColor" value="#000014">
+        </div>
+        <div class="control-group">
+            <label>Star size</label>
+            <input type="range" id="starSize" min="1" max="50" value="5">
+        </div>
+        <div class="control-group" id="speedpanel">
+            <label>Rotaition speed</label>
+            <input type="range" id="speed" min="10" max="100" value="20">
+        </div>
+    </div>
+
+    <script src="interaction.js"></script>
+</body>
+</html>
